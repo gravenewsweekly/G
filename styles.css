@@ -1,0 +1,218 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Early 2000s Aesthetic */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: #006633;
+    color: #fff;
+    border-bottom: 3px solid #000;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Navigation */
+nav {
+    background: #ccc;
+    border: 2px solid #000;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #006633;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #006633;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.cafe-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px 0;
+    border: 2px solid #000;
+}
+
+/* Blinking Effect */
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Menu Section */
+.vegetarian-note {
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.menu-list li span {
+    color: #006633;
+    font-weight: bold;
+}
+
+/* Apply Button */
+.apply-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #006633;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #000;
+    margin-top: 10px;
+}
+
+.apply-button:hover {
+    background: #004d26;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #006633;
+    color: #fff;
+    border-top: 3px solid #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .cafe-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .menu-list li {
+        font-size: 16px;
+    }
+}
